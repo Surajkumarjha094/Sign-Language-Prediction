@@ -24,9 +24,9 @@ confidence_score = 0.0
 
 offset=29
 
-
-os.environ["THEANO_FLAGS"] = "device=cuda, assert_no_cpu_op=True"
-
+# NOTE: THEANO_FLAGS removed for Mac/cross-platform compatibility
+# (Theano is deprecated, CUDA not available on Mac)
+# TensorFlow handles device placement automatically
 
 # Application :
 
